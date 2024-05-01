@@ -1,4 +1,4 @@
 # Simple-Calculator
 
-✨ It's a simpl calculator.                               ✨
-🍕 If you use this code, plis write at comend "by Colappo" 🍕
+✨ It's a simpl calculator.                               ✨\n
+🍕 If you use this code, write in the comment "by Colappo" 🍕
