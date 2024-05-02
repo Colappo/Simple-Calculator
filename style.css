@@ -42,6 +42,25 @@ body {
     border-radius: 16px;
 }
 
+#p1 {
+    display: flex;
+    height: 70%;
+    width: 95%;
+    justify-content: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#p2 {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 15px;
+    height: 30%;
+    width: 95%;
+}
+
 #box {
     display: flex;
     flex-wrap: wrap;
