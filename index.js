@@ -60,6 +60,14 @@ function addValueD() {
     i = i + 1
 }
 
+function addValuePo() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "^"
+    P2.innerHTML = P1.innerHTML
+    P1.innerHTML = ""
+    i = i + 1
+}
+
 function reverse() {
     P1.innerHTML = -parseFloat(P1.innerHTML)
 }
@@ -109,9 +117,17 @@ function execute() {
                 break
             case "/":
                 if (P1.innerHTML === "0") {
+                    P1.style.fontSize = "24px"
                     P1.innerHTML = "Nie można dzielić przez 0, podaj inna liczbe!"
+                    setTimeout(() => {
+                        P1.innerHTML = ""
+                    }, 2000)
+                    setTimeout(() => {
+                        P1.style.fontSize = "40px"
+                    }, 2000)
                     values = []
                     char = []
+                    P2.innerHTML = ""
                     break
                 }
                 else {
@@ -121,6 +137,25 @@ function execute() {
                     char = []
                     break
                 }
+            case "^":
+                let iPo = 0;
+                let potega = parseFloat(P2.innerHTML)
+                let pp = P1.innerHTML
+                console.log("P" + potega)
+
+                while (true) {
+                    potega = parseFloat(potega) * parseFloat(P2.innerHTML)
+                    console.log(potega)
+                    if (iPo === parseFloat(pp) - 2) {
+                        P1.innerHTML = potega
+                        break
+                    };
+                    iPo++
+                } 
+                potega = 0
+                values = []
+                char = []
+                break
         }
         i = 0
     }
@@ -175,5 +210,6 @@ Bd.addEventListener("click", addValueD);
 B_x.addEventListener("click", reverse);
 Bk.addEventListener("click", addDot);
 Bx_.addEventListener("click", backspace);
+Bxy.addEventListener("click", addValuePo);
 
 Br.addEventListener("mouseup", execute)
