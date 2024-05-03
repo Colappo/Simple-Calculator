@@ -144,7 +144,7 @@ function execute() {
                 console.log("P" + potega)
 
                 while (true) {
-                    if (P1.innerHTML === 0) {
+                    if (pp === 0) {
                         P1.innerHTML = 1
                         break
                     }
