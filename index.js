@@ -138,27 +138,7 @@ function execute() {
                     break
                 }
             case "^":
-                let iPo = 0;
-                let potega = parseFloat(P2.innerHTML)
-                let pp = P1.innerHTML
-                console.log("P" + potega)
-
-                if (pp === 0) {
-                        P1.innerHTML = 1
-                        break
-                    }
-                else {
-                    while (true) {
-                        potega = parseFloat(potega) * parseFloat(P2.innerHTML)
-                        console.log(potega)
-                        if (iPo === parseFloat(pp) - 2) {
-                            P1.innerHTML = potega
-                            break
-                        };
-                        iPo++
-                    } 
-                }
-                potega = 0
+                P1.innerHTML = Math.pow(parseFloat(P2.innerHTML), parseFloat(p1.innerHTML))
                 values = []
                 char = []
                 break
