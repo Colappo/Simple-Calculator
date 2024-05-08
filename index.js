@@ -143,12 +143,12 @@ function execute() {
                 let pp = P1.innerHTML
                 console.log("P" + potega)
 
-                while (true) {
-                    if (pp === 0) {
+                if (pp === 0) {
                         P1.innerHTML = 1
                         break
                     }
-                    else {
+                else {
+                    while (true) {
                         potega = parseFloat(potega) * parseFloat(P2.innerHTML)
                         console.log(potega)
                         if (iPo === parseFloat(pp) - 2) {
@@ -156,8 +156,8 @@ function execute() {
                             break
                         };
                         iPo++
-                    }
-                } 
+                    } 
+                }
                 potega = 0
                 values = []
                 char = []
