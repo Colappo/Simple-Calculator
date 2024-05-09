@@ -199,3 +199,5 @@ Bx_.addEventListener("click", backspace);
 Bxy.addEventListener("click", addValuePo);
 
 Br.addEventListener("mouseup", execute)
+
+// by Colappo
