@@ -1,69 +1,69 @@
-konst P1 dokument =.pobierz element przezId("„p1");
-konst P2 dokument =.pobierz element przezId("„p2");
+const P1 = document.getElementById("p1");
+const P2 = document.getElementById("p2");
 
-konst B_x dokument =.pobierz element przezId("„Bx");
-konst Bx_ dokument =.pobierz element przezId("„B^2");
-konst Bxy dokument =.pobierz element przezId("„B^y");
-konst Bp dokument =.pobierz element przezId("„Bp");
-konst B7 dokument =.pobierz element przezId("„B7");
-konst B8 dokument =.pobierz element przezId("„B8");
-konst B9 dokument =.pobierz element przezId("„B9");
-konst Bd dokument =.pobierz element przezId("B/");
-konst B4 dokument =.pobierz element przezId("„B4");
-konst B5 dokument =.pobierz element przezId("„B5");
-konst B6 dokument =.pobierz element przezId("„B6");
-konst Bm dokument =.pobierz element przezId("„Bx");
-konst B1 dokument =.pobierz element przezId("„B1");
-konst B2 dokument =.pobierz element przezId("„B2");
-konst B3 dokument =.pobierz element przezId("„B3");
-konst Bmin dokument =.pobierz element przezId("B-");
-konst B0 dokument =.pobierz element przezId("„B0");
-konst Bk dokument =.pobierz element przezId("B.");
-konst Br dokument =.pobierz element przezId("„B=");
-konst Bplus dokument =.pobierz element przezId("„B+");
+const B_x = document.getElementById("B-x");
+const Bx_ = document.getElementById("B^2");
+const Bxy = document.getElementById("B^y");
+const Bp = document.getElementById("Bp");
+const B7 = document.getElementById("B7");
+const B8 = document.getElementById("B8");
+const B9 = document.getElementById("B9");
+const Bd = document.getElementById("B/");
+const B4 = document.getElementById("B4");
+const B5 = document.getElementById("B5");
+const B6 = document.getElementById("B6");
+const Bm = document.getElementById("Bx");
+const B1 = document.getElementById("B1");
+const B2 = document.getElementById("B2");
+const B3 = document.getElementById("B3");
+const Bmin = document.getElementById("B-");
+const B0 = document.getElementById("B0");
+const Bk = document.getElementById("B.");
+const Br = document.getElementById("B=");
+const Bplus = document.getElementById("B+");
 
-pozwól wartości = []
-pozwól char = []
+let values = []
+let char = []
 
 
-pozwól i = 0;
+let i = 0;
 
-funkcja dodajValueP() {
- wartości[i] = parseFloat(P1.wewnętrzne HTML)
- char[i] = "„+"
- P2.wewnętrzne HTML = P1.wewnętrzne HTML
- P1.wewnętrzne HTML = ""
- i = i + 1
+function addValueP() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "+"
+    P2.innerHTML = P1.innerHTML
+    P1.innerHTML = ""
+    i = i + 1
 }
 
-funkcja dodajValueMi() {
- wartości[i] = parseFloat(P1.wewnętrzne HTML)
- char[i] = "-"
- P2.wewnętrzne HTML = P1.wewnętrzne HTML
- P1.wewnętrzne HTML = ""
- i = i + 1
+function addValueMi() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "-"
+    P2.innerHTML = P1.innerHTML
+    P1.innerHTML = ""
+    i = i + 1
 }
 
-funkcja dodajValueMn() {
- wartości[i] = parseFloat(P1.wewnętrzne HTML)
- char[i] = "„x"
- P2.wewnętrzne HTML = P1.wewnętrzne HTML
- P1.wewnętrzne HTML = ""
- i = i + 1
+function addValueMn() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "x"
+    P2.innerHTML = P1.innerHTML
+    P1.innerHTML = ""
+    i = i + 1
 }
 
-funkcja dodajValueD() {
- wartości[i] = parseFloat(P1.wewnętrzne HTML)
- char[i] = "/"
- P2.wewnętrzne HTML = P1.wewnętrzne HTML
- P1.wewnętrzne HTML = ""
- i = i + 1
+function addValueD() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "/"
+    P2.innerHTML = P1.innerHTML
+    P1.innerHTML = ""
+    i = i + 1
 }
 
-funkcja dodajValuePo() {
- wartości[i] = parseFloat(P1.wewnętrzne HTML)
- char[i] = "^"
- P2.wewnętrzne HTML = P1.wewnętrzne HTML
+function addValuePo() {
+    values[i] = parseFloat(P1.innerHTML)
+    char[i] = "^"
+    P2.innerHTML = P1.innerHTML
     P1.innerHTML = ""
     i = i + 1
 }
@@ -148,61 +148,61 @@ function execute() {
                 char = []
                 break
         }
- ja = 0
+        i = 0
     }
- P2.wewnętrzne HTML = ""
+    P2.innerHTML = ""
 }
 
 
-B0.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 0;
+B0.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 0;
 });
 
-B1.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 1;
+B1.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 1;
 });
 
-B2.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 2;
+B2.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 2;
 });
 
-B3.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 3;
+B3.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 3;
 });
 
-B4.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 4;
+B4.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 4;
 });
 
-B5.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 5;
+B5.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 5;
 });
 
-B6.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 6;
+B6.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 6;
 });
 
-B7.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 7;
+B7.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 7;
 });
 
-B8.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 8;
+B8.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 8;
 });
 
-B9.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„mysz", () => {
- P1.wewnętrzne HTML = P1.wewnętrzne HTML + 9;
+B9.addEventListener("mouseup", () => {
+    P1.innerHTML = P1.innerHTML + 9;
 });
 
-Bplus.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodajValueP);
-Bmin.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodajValueMi);
-Bm.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodajValueMn);
-Bd.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodajValueD);
+Bplus.addEventListener("click", addValueP);
+Bmin.addEventListener("click", addValueMi);
+Bm.addEventListener("click", addValueMn);
+Bd.addEventListener("click", addValueD);
 
-B_x.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", odwrócić);
-Bk.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodaj kropkę);
-Bx_.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", przestrzeń wstecz);
-Bxy.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", dodajValuePo);
-Bp.dodaj słuchacz wydarzenia("„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„kliknąć", molo)
+B_x.addEventListener("click", reverse);
+Bk.addEventListener("click", addDot);
+Bx_.addEventListener("click", backspace);
+Bxy.addEventListener("click", addValuePo);
+Bp.addEventListener("click", pier)
 
-Br.(, wykonać)
+Br.addEventListener("mouseup", execute)
